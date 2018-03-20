@@ -7,40 +7,45 @@ body {
 	font-family: sans-serif;
 }
 
-/*
 div.menuitem {
-	display: flex;
+	display: flex; /*금요일 설명 */
 	height: 9em;
 }
-*/
 
-/*
-div.menuitem h2 {
+
+
+div.menuitem h2 {/*div중에서도 menuitem안에 있는 h2인거 만*/
 	display: flex;
 	width: 20em;
 	padding-right: 3em;
 }
-*/
 
-/*
-div.menuitem p {
+
+div.menuitem p {/*폰트 크기*/
 	width: 90%;
 	font-size: 14pt;
+	display:none;
 }
-*/
 
-/*
-div.menuitem p img {
+
+
+div.menuitem p img {/*float해서 왼쪽으로 붙여 */
 	float: left;
 	margin: 3px 30px 3px 60px;
+	display:none;
 }
-*/
 
-/*
-div.menuitem h2:hover {
-	color: cyan;
+/*hover은 하이퍼링크 누르면 보라색으로 변환 */
+
+
+div.menuitem h2:hover {  /*div에 h2에 hover 장착 */
+	color: blue;
 	background-color: gray;
+
 }
-*/
-
-
+div.menuitem:hover p{/*none인 p라서 뒤에 hover 붙이면 x */
+display:inline;
+}
+div.menuitem:hover img{/*float해서 왼쪽으로 붙여 */
+display:inline;
+}
